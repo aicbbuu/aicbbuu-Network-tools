@@ -41,7 +41,6 @@
         <Setter Property="Foreground" Value="#0A0E1A"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="Padding" Value="10,6"/>
-        <Setter Property="CornerRadius" Value="6"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>

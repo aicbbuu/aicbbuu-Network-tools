@@ -4,7 +4,7 @@
              xmlns:vm="clr-namespace:AicbbuuNetworkTools.ViewModels"
              Background="Transparent">
     <Border Style="{StaticResource CardBorder}" Margin="20">
-        <Grid RowSpacing="12">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
