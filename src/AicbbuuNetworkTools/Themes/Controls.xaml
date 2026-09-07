@@ -54,7 +54,7 @@
     </Style>
 
     <Style x:Key="AppTextBox" TargetType="TextBox">
-        <Setter Property="Background" Value="{StaticResource BgElevated}"/>
+        <Setter Property="Background" Value="{StaticResource BgElevatedBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource BorderSubtleBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>

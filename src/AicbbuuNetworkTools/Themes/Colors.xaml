@@ -26,6 +26,7 @@
     <SolidColorBrush x:Key="BgBaseBrush" Color="{StaticResource BgBase}" />
     <SolidColorBrush x:Key="BgSurfaceBrush" Color="{StaticResource BgSurface}" />
     <SolidColorBrush x:Key="BgSidebarBrush" Color="{StaticResource BgSidebar}" />
+    <SolidColorBrush x:Key="BgElevatedBrush" Color="{StaticResource BgElevated}" />
     <SolidColorBrush x:Key="BgHoverBrush" Color="{StaticResource BgHover}" />
     <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentPrimary}" />
     <SolidColorBrush x:Key="AccentSoftBrush" Color="{StaticResource AccentSoft}" />
