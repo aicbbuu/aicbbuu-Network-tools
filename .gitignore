@@ -1,0 +1,107 @@
+## .NET / Visual Studio / Rider
+bin/
+obj/
+out/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+build/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.userprefs
+*.sln.ide/
+.vscode/
+.idea/
+
+## NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+## Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+TestResult*.xml
+
+## .NET Core / .NET 5+
+project.assets.json
+project.nuget.cache
+project.nuget.props
+project.nuget.targets
+*.lock.json
+artifacts/
+
+## Publish output
+publish/
+*.pubxml
+*.pubxml.user
+*.publishproj
+PublishProfiles/
+
+## Tools
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.swp
+*_i.c
+*_p.c
+*_h.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+## Misc
+*.local
+*.cache
+*.tlog
+*.dll
+*.exe
+*.pdb
+*.exp
+*.lib
+*.ilk

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>AicbbuuNetworkTools</RootNamespace>
+    <AssemblyName>AicbbuuNetworkTools</AssemblyName>
+    <ApplicationIcon></ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Authors>aicbbuu</Authors>
+    <Company>aicbbuu</Company>
+    <Product>Aicbbuu Network Tools</Product>
+    <Description>Windows desktop network diagnostic toolset</Description>
+    <Copyright>Copyright (C) 2024 aicbbuu</Copyright>
+    <LangVersion>latest</LangVersion>
+    <NeutralLanguage>zh-CN</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+  </ItemGroup>
+
+</Project>

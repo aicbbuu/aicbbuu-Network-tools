@@ -1,0 +1,57 @@
+name: Windows Build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore
+      run: dotnet restore src/AicbbuuNetworkTools/AicbbuuNetworkTools.csproj
+
+    - name: Build (Release, self-contained, win-x64)
+      run: dotnet publish src/AicbbuuNetworkTools/AicbbuuNetworkTools.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o publish
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: AicbbuuNetworkTools-win-x64
+        path: publish/AicbbuuNetworkTools.exe
+        if-no-files-found: error
+
+    - name: Create Release (on tag)
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          publish/AicbbuuNetworkTools.exe
+          LICENSE
+          README.md
+        body: |
+          ## Aicbbuu Network Tools ${{ github.ref_name }}
+
+          Windows x64 self-contained single-file build.
+
+          **安装/运行**：
+          1. 下载 `AicbbuuNetworkTools.exe`
+          2. 双击运行（无需安装 .NET 运行时）
+        draft: false
+        prerelease: false
