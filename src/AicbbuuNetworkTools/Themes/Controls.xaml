@@ -59,7 +59,6 @@
         <Setter Property="BorderBrush" Value="{StaticResource BorderSubtleBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="Padding" Value="8,6"/>
-        <Setter Property="CornerRadius" Value="6"/>
     </Style>
 
 </ResourceDictionary>
